@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+    
+    <html>
+        
+        <head>
+            <title>Sign Up</title>
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+            
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+
+            <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+            <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+            <link href="assets/css/SignIn.css" rel="stylesheet">
+            <script src="assets/js/SignIn.js"></script>
+
+            
+          </head>
+          
+
+        <img src="assets/images/logo/mimDeco Logo.pdf.png">
+
+        <div class="login-form-container">
+
+            <div id="create-back-btn" >	&lt;</div>
+            <div id="close-login-btn" >X</div>
+            
+            <form  action="action.php" method="post" id="loginform">
+                
+                <h3>Sign Up</h3>
+
+                <div class="box">
+                    <i class="bi bi-person-fill"></i>
+                    <input class="plch" type="text" placeholder="Full Name" >
+                </div>
+
+                <div class="box">
+                    <i class="bi bi-envelope-fill"></i>
+                    <input class="plch" type="password" placeholder="Email Address" >
+                </div>
+
+                <div class="box">
+                    <i class="bi bi-lock-fill"></i>
+                    <input class="plch" type="text" placeholder="Password" >
+                </div>
+
+                <div class="box">
+                    <i class="bi bi-lock-fill"></i>
+                    <input class="plch" type="password" placeholder="Re-enter Password" >
+                </div>  
+
+                <input type="checkbox" class="checkbox">
+                <label>I agree all statements in <i><b>Terms of service</b></i></label>
+
+                <button type="submit" class="btn btn-primary">Rigister</button>
+
+                <br>
+
+                <a id="create">I am already member</a>
+
+            </form>
+
+            <form id="registerform" action="action.php"  hidden method="post">
+
+                <h3>Sign In</h3>
+
+                <div class="box">
+                    <i class="bi bi-envelope-fill"></i>
+                    <input class="plch" type="password" placeholder="Email Address" >
+                </div>
+
+                <div class="box">
+                    <i class="bi bi-lock-fill"></i>
+                    <input class="plch" type="text" placeholder="Password" >
+                </div>
+
+                <input type="checkbox" class="checkbox">
+                <label>Remember me</label>
+
+                <br>
+
+                <button type="submit" class="btn2 btn-primary">Login</button>
+
+                <br><br>
+
+                <h6>Or login with</h6>
+
+                <br><br>
+
+                <div id="icons">
+                    <button type="submit" class="btn3 btn-primary"><i class="fa fa-google-plus"></i></button>
+                    <button type="submit" class="btn3 btn-primary"><i class="fa fa-facebook"></i></button>
+                    <button type="submit" class="btn3 btn-primary"><i class="fa fa-twitter"></i></button>
+                </div>
+
+            </form>
+
+            </div>
+            </div>
+        </body>
+    </html>

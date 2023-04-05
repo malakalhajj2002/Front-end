@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading..</title>
+</head>
+<body>
+
+    <div id="loader">
+    <div class="center-body">
+        <div class="loader-circle-39">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+        </div>
+        <div>
+            <img src="images/logo/mimDeco Logo.pdf.png" class="logo" alt="">
+        </div>
+    </div>
+        
+        <style>
+        .center-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 60vh;
+            /****** center box
+            width: 300px;
+            height: 300px;
+            border: solid 1px #aaa; */
+        }
+        #loader {
+            background: #ffffff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            
+        }
+        .loader-circle-39 {
+             display: inline-block;
+             height: 70px;
+             width: 70px;
+             position: relative;
+         }
+         .loader-circle-39 span {
+             height: 50px;
+             width: 50px;
+             border-radius: 50%;
+             border: 10px solid transparent;
+             display: inline-block;
+             position: absolute;
+         }
+         .loader-circle-39 span:nth-child(1) {
+             border-right-color: #D4BA78;
+             animation: loader-circle-39-clockwise 2s linear infinite;
+         }
+         .loader-circle-39 span:nth-child(2) {
+             border-left-color: #D4BA78;
+             animation: loader-circle-39-antiClockwise 2s linear infinite;
+         }
+         .loader-circle-39 span:nth-child(3) {
+             height: 16px;
+             width: 16px;
+             border: 0;
+             background-color: #D4BA78;
+             top: 28px;
+             left: 28px;
+             animation: loader-circle-39-upDown 2s linear infinite;
+         }
+         @keyframes loader-circle-39-upDown {
+             0% {
+                 transform: translate(0, 30px);
+             }
+             50% {
+                 transform: translate(0, -30px);
+             }
+             100% {
+                 transform: translate(0, 30px);
+             }
+         }
+         @keyframes loader-circle-39-antiClockwise {
+             0% {
+                 transform: rotate(0deg);
+             }
+             100% {
+                 transform: rotate(-360deg);
+             }
+         }
+         @keyframes loader-circle-39-clockwise {
+             0% {
+                 transform: rotate(0deg);
+             }
+             100% {
+                 transform: rotate(360deg);
+             }
+         }
+
+
+         .logo{
+               
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+         }
+        </style>
+</body>
+</html>
